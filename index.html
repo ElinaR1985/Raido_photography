@@ -12,32 +12,36 @@
     <header class="site-header">
       <a class="brand" href="#top">Raido Rüütel</a>
       <nav class="site-nav" aria-label="Main Navigation">
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <select id="lang-select" aria-label="Language" style="margin-left:18px; padding:6px 8px; border-radius:8px; border:1px solid #e6e8ef; background:#fff;">
+          <option value="en">EN</option>
+          <option value="et">ET</option>
+        </select>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-inner">
-          <h1 id="hero-title">Nature photography from Estonia</h1>
-          <p class="subtitle">Bogs, seaside, and northern lights through the lens of Raido Rüütel.</p>
-          <a class="cta" href="#gallery">View Gallery</a>
+          <h1 id="hero-title" data-i18n="hero.title">Nature photography from Estonia</h1>
+          <p class="subtitle" data-i18n="hero.subtitle">Bogs, seaside, and northern lights through the lens of Raido Rüütel.</p>
+          <a class="cta" href="#gallery" data-i18n="hero.cta">View Gallery</a>
         </div>
       </section>
 
       <section id="about" class="section about">
         <div class="container">
-          <h2>About</h2>
+          <h2 data-i18n="about.heading">About</h2>
           <div class="about-content">
             <div class="about-text">
-              <p>
+              <p data-i18n="about.p1">
                 I’m Raido Rüütel, a hobby photographer drawn to quiet moments in nature —
                 misty bogs at dawn, windswept Baltic shores, and the glow of northern lights.
                 This page is a small selection of scenes that make me pause and look longer.
               </p>
-              <p>
+              <p data-i18n="about.p2">
                 My photography is about patience and presence. I prefer unhurried walks and soft light,
                 letting weather and seasons set the mood.
               </p>
@@ -51,7 +55,7 @@
 
       <section id="gallery" class="section gallery" aria-labelledby="gallery-title">
         <div class="container">
-          <h2 id="gallery-title">Gallery</h2>
+          <h2 id="gallery-title" data-i18n="gallery.heading">Gallery</h2>
           <div class="grid" role="list">
             <figure class="card" role="listitem">
               <img src="./photos1/DSC_2598.jpg" alt="Photo DSC_2598 by Raido Rüütel" loading="lazy">
@@ -62,24 +66,36 @@
               <figcaption>Photo IMGP2567</figcaption>
             </figure>
             <figure class="card" role="listitem">
-              <img src="./photos1/IMGP3764-2.jpg" alt="Photo IMGP3764-2 by Raido Rüütel" loading="lazy">
-              <figcaption>Photo IMGP3764-2</figcaption>
-            </figure>
-            <figure class="card" role="listitem">
               <img src="./photos1/IMGP3798.jpg" alt="Photo IMGP3798 by Raido Rüütel" loading="lazy">
               <figcaption>Photo IMGP3798</figcaption>
-            </figure>
-            <figure class="card" role="listitem">
-              <img src="./photos1/IMGP5572-HDR.jpg" alt="Photo IMGP5572-HDR by Raido Rüütel" loading="lazy">
-              <figcaption>Photo IMGP5572-HDR</figcaption>
             </figure>
             <figure class="card" role="listitem">
               <img src="./photos1/IMGP7181-Enhanced-NR.jpg" alt="Photo IMGP7181-Enhanced-NR by Raido Rüütel" loading="lazy">
               <figcaption>Photo IMGP7181-Enhanced-NR</figcaption>
             </figure>
             <figure class="card" role="listitem">
-              <img src="./photos1/IMGP7245-Pano-Enhanced-NR.jpg" alt="Photo IMGP7245-Pano-Enhanced-NR by Raido Rüütel" loading="lazy">
-              <figcaption>Photo IMGP7245-Pano-Enhanced-NR</figcaption>
+              <img src="./photos1/IMGP0839.jpg" alt="Photo IMGP0839 by Raido Rüütel" loading="lazy">
+              <figcaption>Photo IMGP0839</figcaption>
+            </figure>
+            <figure class="card" role="listitem">
+              <img src="./photos1/IMGP1574.jpg" alt="Photo IMGP1574 by Raido Rüütel" loading="lazy">
+              <figcaption>Photo IMGP1574</figcaption>
+            </figure>
+            <figure class="card" role="listitem">
+              <img src="./photos1/IMGP4908.jpg" alt="Photo IMGP4908 by Raido Rüütel" loading="lazy">
+              <figcaption>Photo IMGP4908</figcaption>
+            </figure>
+            <figure class="card" role="listitem">
+              <img src="./photos1/IMGP4912.jpg" alt="Photo IMGP4912 by Raido Rüütel" loading="lazy">
+              <figcaption>Photo IMGP4912</figcaption>
+            </figure>
+            <figure class="card" role="listitem">
+              <img src="./photos1/IMGP5105.jpg" alt="Photo IMGP5105 by Raido Rüütel" loading="lazy">
+              <figcaption>Photo IMGP5105</figcaption>
+            </figure>
+            <figure class="card" role="listitem">
+              <img src="./photos1/IMGP6667.jpg" alt="Photo IMGP6667 by Raido Rüütel" loading="lazy">
+              <figcaption>Photo IMGP6667</figcaption>
             </figure>
           </div>
         </div>
@@ -87,11 +103,11 @@
 
       <section id="contact" class="section contact">
         <div class="container">
-          <h2>Contact</h2>
-          <p>For prints or collaboration, feel free to reach out.</p>
+          <h2 data-i18n="contact.heading">Contact</h2>
+          <p data-i18n="contact.p">For prints or collaboration, feel free to reach out.</p>
           <p>
-            <a class="cta secondary" href="mailto:rraido145@hotmail.com" aria-label="Email Raido">
-              rraido145@hotmail.com
+            <a class="cta secondary" href="mailto:raido145@hotmail.com" aria-label="Email Raido">
+              raido145@hotmail.com
             </a>
           </p>
         </div>
@@ -109,6 +125,61 @@
       (function setYear(){
         var el = document.getElementById('year');
         if (el) el.textContent = new Date().getFullYear();
+      })();
+
+      // Simple i18n
+      var translations = {
+        en: {
+          'nav.about': 'About',
+          'nav.gallery': 'Gallery',
+          'nav.contact': 'Contact',
+          'hero.title': 'Nature photography from Estonia',
+          'hero.subtitle': 'Bogs, seaside, and northern lights through the lens of Raido Rüütel.',
+          'hero.cta': 'View Gallery',
+          'about.heading': 'About',
+          'about.p1': 'I’m Raido Rüütel, a hobby photographer drawn to quiet moments in nature — misty bogs at dawn, windswept Baltic shores, and the glow of northern lights. This page is a small selection of scenes that make me pause and look longer.',
+          'about.p2': 'My photography is about patience and presence. I prefer unhurried walks and soft light, letting weather and seasons set the mood.',
+          'gallery.heading': 'Gallery',
+          'contact.heading': 'Contact',
+          'contact.p': 'For prints or collaboration, feel free to reach out.'
+        },
+        et: {
+          'nav.about': 'Minust',
+          'nav.gallery': 'Galerii',
+          'nav.contact': 'Kontakt',
+          'hero.title': 'Loodusfoto Eestist',
+          'hero.subtitle': 'Rabad, mererand ja virmalised Raido Rüütli pilgu läbi.',
+          'hero.cta': 'Vaata galeriid',
+          'about.heading': 'Minust',
+          'about.p1': 'Olen Raido Rüütel, hobi-fotograaf, keda köidavad vaiksed hetked looduses — udused rabahommikud, tuuline Läänemeri ja virmaliste kuma. See leht on väike valik stseene, mis panevad mind kauem vaatama.',
+          'about.p2': 'Minu jaoks on fotograafia kannatlikkus ja kohalolu. Eelistan aeglasi jalutuskäike ja pehmet valgust, lastes ilmal ja aastaaegadel meeleolu seada.',
+          'gallery.heading': 'Galerii',
+          'contact.heading': 'Kontakt',
+          'contact.p': 'Trükkide või koostöö osas võta julgelt ühendust.'
+        }
+      };
+
+      function setLanguage(lang) {
+        var dict = translations[lang] || translations.en;
+        document.documentElement.setAttribute('lang', lang);
+        var nodes = document.querySelectorAll('[data-i18n]');
+        nodes.forEach(function(node){
+          var key = node.getAttribute('data-i18n');
+          if (dict[key]) node.textContent = dict[key];
+        });
+        try { localStorage.setItem('lang', lang); } catch (e) {}
+      }
+
+      (function initI18n(){
+        var saved = null;
+        try { saved = localStorage.getItem('lang'); } catch (e) {}
+        var initial = saved || (navigator.language && navigator.language.startsWith('et') ? 'et' : 'en');
+        var select = document.getElementById('lang-select');
+        if (select) {
+          select.value = initial;
+          select.addEventListener('change', function(){ setLanguage(this.value); });
+        }
+        setLanguage(initial);
       })();
     </script>
   </body>
